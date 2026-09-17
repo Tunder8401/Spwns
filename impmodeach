@@ -1,0 +1,10 @@
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tunder8401/Spwns/refs/heads/main/source"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Something Is Very Wrong",
+    Desc = "Something Is Following You",
+    Reason = "Execute Impossible Mode",
+    Image = "rbxassetid://10657365561"
+})
