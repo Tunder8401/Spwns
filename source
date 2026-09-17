@@ -1,0 +1,14 @@
+local CustomAchievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tunder8401/Spwns/refs/heads/main/init"))()
+
+return function(info: any)
+    CustomAchievements:Grant({
+        Identifier = "TestAchievement",
+        Title = info.Title,
+        Desc = info.Desc,
+        Reason = info.Reason,
+        Image = info.Image
+    }, {
+        CheckOwned = false,
+        Remember = false
+    })
+end
